@@ -1,0 +1,17 @@
+#!/bin/bash
+
+for tr in {1..5}
+do
+    for run in {1..30}
+    do
+        echo "Iteration: $run"
+
+        python train.py \
+                --dataset ms_academic_phy \
+                --checkpt_file pre_trained/ms_academic_phy/ms_academic_phy_mod.ckpt \
+                --train_size $tr \
+                --dropout 0.6 \
+                --seed $run \
+	        >> odnn_ms_academic_phy_${tr}.txt
+    done
+done
