@@ -4,9 +4,9 @@ import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 
 from utils import layers
-from models.base_rnnets import BaseODNN
+from models.base_odnn import BaseODINN
 
-class ODNN(BaseODNN):
+class ODINN(BaseODINN):
     def inference(inputs, nb_classes, training, ffd_drop,
             norm_mat, output_dim, activation=tf.nn.elu):
         
