@@ -1,7 +1,7 @@
-# ODNN
+# ODINN
 
 ## Overview
-Here we provide the implementation of ODNN in TensorFlow. The repository is organised as follows:
+Here we provide the implementation of ODINN in TensorFlow. The repository is organised as follows:
 - `data/` contains datasets Cora, Pubmed, Amazon Computers, Amazon Photo, MS Academic CS (Coauthor CS), MS Academic Physics (Coauthor Physics);
 - `models/` contains the implementation of the ODNN;
 - `utils/` contains:
