@@ -10,8 +10,8 @@ do
             --train_size 5 \
             --dropout 0.6 \
             --seed $run \
-	    >> odnn_ms_academic_phy_5.txt
+	    >> odinn_ms_academic_phy_5.txt
 done
 
 # python calculate_average_accuracy.py \
-#         --file_name odnn_ms_academic_phy_5.txt \
+#         --file_name odinn_ms_academic_phy_5.txt \
