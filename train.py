@@ -9,7 +9,7 @@ import numpy as np
 #if type(tf.contrib) != type(tf): tf.contrib._warning = None
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
-from models import ODNN
+from models import ODINN
 from utils import process
 
 config = tf.ConfigProto()
@@ -25,7 +25,7 @@ lr = 0.005  # learning rate
 l2_coef = 0.0005  # weight decay
 hid_units = 64 # numbers of hidden units per each attention head in each layer
 nonlinearity = tf.nn.elu
-model = ODNN
+model = ODINN
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS
