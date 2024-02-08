@@ -12,6 +12,6 @@ do
                 --train_size $tr \
                 --dropout 0.6 \
                 --seed $run \
-	        >> odnn_ms_academic_phy_${tr}.txt
+	        >> odinn_ms_academic_phy_${tr}.txt
     done
 done
